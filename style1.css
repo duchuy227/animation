@@ -12,10 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(62, 60, 60);
-    background-image: url('https://img.freepik.com/free-vector/flat-tet-background_23-2149237165.jpg?w=2000');
+    background: rgb(0, 0, 0);
+    /* background-image: url('https://img.freepik.com/free-vector/flat-tet-background_23-2149237165.jpg?w=2000');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
 }
 
 /* canvas {
@@ -28,9 +28,9 @@ body {
 } */
 
 .pyro > .before, .pyro > .after {
-    position: absolute;
-    width: 7px;
-    height: 7px;
+    position: relative ;
+    width: 25px;
+    height: 20px;
     pointer-events: none;
     z-index: 99999999;
     border-radius: 50%;
