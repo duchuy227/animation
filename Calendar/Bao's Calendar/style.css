@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #00FA9A;
+    background: #c97bed;
 }
 
 .calendar {
@@ -20,8 +20,8 @@ body {
     left: 20%;
     justify-content: space-between;
     align-items: center;
-    border: 15px solid #66CDAA;
-    box-shadow: 40px 45px 45px 40px rgb(36, 141, 120);
+    border: 15px solid #cfe685;
+    box-shadow: 40px 0px 45px 0px rgb(102, 185, 218);
 }
 
 .calendar .date {
@@ -66,7 +66,7 @@ body {
 }
 
 .calendar .date .days .number.active{
-    background: #064a10;
+    background: #f12054;
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 50%;
