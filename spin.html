@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second chance</title>
+    <link rel="stylesheet" href="spin.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="spinBtn">Spin</div>
+        <div class="wheel">
+            <div class="number" style="--i:1;--crl:#7cdb70;">
+            <span>20k</span></div>
+            <div class="number" style="--i:2;--crl:#ede140;">
+            <span>29k</span></div>
+            <div class="number" style="--i:3;--crl:#db8070;">
+                <span>25k</span></div>
+            <div class="number" style="--i:4;--crl:#fb0606;">
+                    <span>10k</span></div>
+            <div class="number" style="--i:5;--crl:#7087db;">
+                        <span>15k</span></div>
+            <div class="number" style="--i:6;--crl:#24f4ea;">
+            <span>1k</span></div>
+            <div class="number" style="--i:7;--crl:#26f00c;">
+                <span>Mất lượt</span></div>
+            <div class="number" style="--i:8;--crl:#db70c2;">
+            <span>20k</span></div>
+        </div>
+    </div>
+    <script>
+        let wheel = document.querySelector('.wheel');
+        let spinBtn = document.querySelector('.spinBtn');
+        let value = Math.ceil(Math.random() *3600);
+
+        spinBtn.onclick = function(){
+            wheel.style.transform = "rotate(" + value + "deg)";
+            value += Math.ceil(Math.random() *3600);
+        }
+    </script>
+</body>
+</html>

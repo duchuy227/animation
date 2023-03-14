@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Name</title>
+    <link rel="stylesheet" href="spin.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="spinBtn">Name</div>
+        <div class="wheel">
+            <div class="number" style="--i:3;--crl:#7cdb70;">
+            <span>Tony Chiến</span></div>
+            <div class="number" style="--i:8;--crl:#c770db;">
+            <span>Tú Trương</span></div>
+        </div>
+    </div>
+    <script>
+        let wheel = document.querySelector('.wheel');
+        let spinBtn = document.querySelector('.spinBtn');
+        let value = Math.ceil(Math.random() *3600);
+
+        spinBtn.onclick = function(){
+            wheel.style.transform = "rotate(" + value + "deg)";
+            value += Math.ceil(Math.random() *3600);
+        }
+    </script>
+</body>
+</html>
