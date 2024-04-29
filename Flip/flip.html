@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Cards</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="card-container">
+        <div class="row">
+            <div class="card" onclick="flipCard(this)" data-name="The high Prietess: Trực giác, nguồn sức mạnh bậc cao, tiềm thức">
+                <img src="front.png" class="front-image" alt="Front Image">
+                <img src="1.jpeg" class="back-image" alt="Back Image">
+            </div>
+            <div class="card" onclick="flipCard(this)" data-name="The Magician: Quyền lực, kỹ năng, sự tập trung, tháo vát">
+                <img src="front.png" class="front-image" alt="Front Image">
+                <img src="2.jpeg" class="back-image" alt="Back Image">
+            </div>
+            <div class="card" onclick="flipCard(this)" data-name="The Fool: Khởi đầu, ngây thơ, tự phát, tinh thần tự do">
+                <img src="front.png" class="front-image" alt="Front Image">
+                <img src="3.jpeg" class="back-image" alt="Back Image">
+            </div>
+        </div>
+        <button onclick="flipAllCards()">Flip Card</button>
+        <div id="selected-card-names" class="selected-card-names"></div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
